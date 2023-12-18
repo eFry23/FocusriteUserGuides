@@ -2,8 +2,8 @@ name: Unzip Workflow
 
 on:
   push:
-    branches:
-      - main  # Change this to your main branch
+    paths:
+      - '**.zip'
 
 jobs:
   unzip:
