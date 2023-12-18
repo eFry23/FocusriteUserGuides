@@ -1,0 +1,17 @@
+name: Unzip Workflow
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run Unzip Script
+      run: bash unzip_script.sh
