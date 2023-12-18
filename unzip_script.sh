@@ -6,7 +6,7 @@ zip_file=$(find . -maxdepth 1 -type f -name '*.zip' -print -quit)
 # Check if a zip file was found
 if [ -n "$zip_file" ]; then
   # Unzip the file
-  unzip "$zip_file" -d main
+  unzip "$zip_file" -d FocusriteUserGuides
 
   # Optionally, you can remove the original zip file if needed
   # rm "$zip_file"
