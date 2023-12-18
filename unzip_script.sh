@@ -11,7 +11,7 @@ if [ -n "$zip_file" ]; then
   unzip -l "$zip_file"
 
   # Unzip the file
-  unzip -q "$zip_file" -d FocusriteUserGuides
+  unzip -q "$zip_file" -d FocusriteUserGuides/unzipped_files
 
   echo "Unzipped successfully."
 
